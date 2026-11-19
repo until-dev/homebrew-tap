@@ -1,9 +1,9 @@
 cask "until" do
   os macos: "darwin-arm64.dmg", linux: "linux-amd64.tar.gz"
 
-  version "0.24.1"
-  sha256 arm:          "73eeacf36c0f5004c136074b6ade10f27ef5dc5329322edfe19710588310afc9",
-         x86_64_linux: "c796bc8264b058de5c9510fbb78339bbf0abfdf26f600697d773475e43d348a9"
+  version "0.25.0"
+  sha256 arm:          "a6f762bac1ea538a3b872ec9011088c8c9ce7a4727f3d340665dbeabac810ea2",
+         x86_64_linux: "5bff0fc42021524a7ad2d35e9137de0d68823860adbff60c580d48905c133a58"
 
   on_macos do
     depends_on arch: :arm64
