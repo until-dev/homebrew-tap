@@ -17,6 +17,17 @@ On Linux you can instead install the `until` package (CLI and desktop app) from 
 
 The macOS DMG and the Linux tarball are copied byte-for-byte from the Until release, and their checksums are recorded in the cask.
 
+## Preview
+
+Release candidates are published to a separate cask, `until@preview`, so they never reach the `until` cask. It conflicts with `until`, so uninstall one before you install the other:
+
+```bash
+brew trust --cask until-dev/tap/until@preview
+brew install --cask until-dev/tap/until@preview
+```
+
+On Linux you can instead add the preview repository [`overmind/until-preview`](https://cloudsmith.io/~overmind/repos/until-preview/) alongside `overmind/until`. Your package manager then installs the highest `until` version from either, so you move to the stable release once it is newer than your candidate. The tap's releases marked as prereleases are candidates.
+
 ## Distribution terms
 
 Download URLs in this tap's [releases](https://github.com/until-dev/homebrew-tap/releases) mirror the assets of each Until release. **Licence terms for redistributing the CLI and desktop app are pending legal sign-off** (see PLAN-217). Until those terms are published here, treat these binaries as early-access builds for invited testers only.

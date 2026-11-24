@@ -1,9 +1,9 @@
 cask "until" do
   os macos: "darwin-arm64.dmg", linux: "linux-amd64.tar.gz"
 
-  version "0.28.0"
-  sha256 arm:          "4da5ba5b3708e3d56227702dd644f8529282259f3c6ecc6564421c48aba3a66e",
-         x86_64_linux: "bd586a890620ee0f2ee25dcfe1e3a9a37af1e4bc32fa31d76ad135a0a81c3869"
+  version "0.29.0"
+  sha256 arm:          "14331fbe8e705b58a4c96fc95ca1b24e77bb597f9254741ec258501be74e40f4",
+         x86_64_linux: "8d414ca226a1c8c6c91d2779c4d3cc437e0be4daa1b65c3de6eead10080ae2d6"
 
   on_macos do
     depends_on arch: :arm64
@@ -34,6 +34,8 @@ cask "until" do
   name "Until"
   desc "Git-backed ticketing for people and agents"
   homepage "https://until.dev/"
+
+  conflicts_with cask: "until@preview"
 
   caveats <<~EOS
     Until sends one anonymous ping a day: a hash of you, a hash of your
