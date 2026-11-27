@@ -1,9 +1,9 @@
 cask "until@preview" do
   os macos: "darwin-arm64.dmg", linux: "linux-amd64.tar.gz"
 
-  version "0.31.0-rc.1"
-  sha256 arm:          "cf11a1fa24c0dac46d4a59fd954036bdd47e7e8c4e32da4b7d531ea01535a4b9",
-         x86_64_linux: "e134f0206809f725343565c8b1b5037879a9f3a6cc94a6162e75dbcf1f17ce9b"
+  version "0.32.0-rc.1"
+  sha256 arm:          "3543290ec22898ea374b4de8a9f7f1883e003146119c3d784cfff1fa9f94e514",
+         x86_64_linux: "4c9aac125cf29b1c5044fad1d35b7327de327c433566ab992aaad065772172b8"
 
   on_macos do
     depends_on arch: :arm64
